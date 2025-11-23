@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Whack-a-mole</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Whack-a-mole</h1>
+    <h2>Press start and try to click on the the Mole! Be fast you only got 30 seconds!</h2>
+
+    <!-- Game information -->
+    <div id="gameInfo">
+        <p>Score: <span id="score">0</span></p>
+        <p>Time left: <span id="time">30</span> s</p>
+        <button id="startBtn">Start game</button>
+        <p id="highScoreLine"></p>
+    </div>
+
+    <!-- "holes" -->
+    <div id="grid">
+        <div class="hole" data-index="0"></div>
+        <div class="hole" data-index="1"></div>
+        <div class="hole" data-index="2"></div>
+        <div class="hole" data-index="3"></div>
+        <div class="hole" data-index="4"></div>
+        <div class="hole" data-index="5"></div>
+        <div class="hole" data-index="6"></div>
+        <div class="hole" data-index="7"></div>
+        <div class="hole" data-index="8"></div>
+    </div>
+
+    <p id="message"></p>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
