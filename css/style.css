@@ -1,0 +1,95 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #f0f4ff, #dfe9ff);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main title */
+h1 {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Box around the game info */
+#gameInfo {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Start button styling */
+#startBtn {
+    padding: 8px 16px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4a6cff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#startBtn:hover {
+    background-color: #3652d4;
+}
+
+/* High score text */
+#highScoreLine {
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+
+/* Grid container for 3x3 holes */
+#grid {
+    width: 300px;              
+    margin: 15px auto;
+    display: grid;                 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);    
+    gap: 10px;                             
+}
+
+/* Each hole in the grid */
+.hole {
+    width: 100%;
+    aspect-ratio: 1 / 1;    
+    background-color: #e3e3e3;
+    border: 2px solid #b0b0b0;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+
+/* Active mole */
+.mole {
+    background-color: #c8ae18;
+}
+
+/* When a mole is "active" in a hole */
+.mole {
+    background-color: #c8ae18;   
+}
+
+/* Message text under the grid */
+#message {
+    margin-top: 12px;
+    font-weight: bold;
+}
